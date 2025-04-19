@@ -1,0 +1,29 @@
+
+.heart {
+  position: relative;
+  width: 120px;
+  height: 110px;
+  background-color: rgb(255, 0, 80); /* vermelho rosado */
+  transform: rotate(-45deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 110px;
+  background-color: rgb(255, 0, 80);
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -60px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 60px;
+}
